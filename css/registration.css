@@ -1,0 +1,91 @@
+/* html {
+  height: 100%;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;           /* mapping all page content*/  
+  padding: 0;
+}
+
+.formcontainer {
+  margin: 48px auto;
+  /* width: 400px; */
+  width: 50%;
+  padding: 20px;
+  background-color: #f3f3f3;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5px; */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.textfield {
+  margin: 10px 0;
+}
+
+.textfield label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.textfield input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox {
+  margin: 10px 0;
+}
+
+.checkbox label {
+  display: inline;
+}
+
+button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: rgb(43, 43, 87);
+}
+
+button[type="reset"] {
+  background-color: rgb(143, 58, 58);
+}
+
+.error {
+  color: red;
+  display: none;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+
+/* 
+When a checkbox is checked (the :checked pseudo-class), and it is immediately 
+followed by a label element, the label's text color will be set to red.
+  :checked is a pseudo-class that matches the checkbox when it is checked.
+  + is a combinator that selects an element that is immediately preceded 
+    by the specified element.
+*/
+input[type="checkbox"]:checked + label {
+  color: red;
+}
