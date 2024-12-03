@@ -2,18 +2,39 @@
 error_reporting(E_ALL ^ E_NOTICE);
 session_start();
 
-if(!isset($_SESSION["username"])){
+if (!isset($_SESSION["username"])) {
     header("Location: ../pages/login.html");
     exit();
 }
 
+// Создаем искусственную ошибку
+trigger_error("Тестовая ошибка для проверки логирования.");
+
 include('../database/conn.php');
+include '../server/log_functions.php'; // Подключаем файл логирования
+write_logs("View page: books.php");
 
 // Получение списка категорий для отображения в форме добавления книги
 $stmt = $conn->prepare("SELECT * FROM category");
 $stmt->execute();
 $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// Получение выбранной категории
+$selectedCategory = isset($_GET['category']) ? intval($_GET['category']) : 0;
+
+// Получение списка книг
+if ($selectedCategory > 0) {
+    $stmt = $conn->prepare("SELECT * FROM book WHERE category = :category");
+    $stmt->bindParam(':category', $selectedCategory);
+} else {
+    $stmt = $conn->prepare("SELECT * FROM book");
+}
+$stmt->execute();
+$books = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,6 +51,11 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     
     <script src="../scripts/books.js"></script>
+    <script>
+        function logCategoryView(categoryId, categoryName) {
+            $.post('../server/log_view.php', { action: 'View category', category_id: categoryId, category_name: categoryName });
+        }
+    </script>
 
     <style>
         .card-content {
@@ -80,11 +106,11 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </ul>
             <ul class="navbar-nav mt-2 mt-lg-0">
                 <?php
-                if(isset($_SESSION['username'])){
-                    echo '<li class="nav-item"><a class="nav-link" href="">Welcome '.$_SESSION['username'].'</a></li>';
+                if (isset($_SESSION['username'])) {
+                    echo '<li class="nav-item"><a class="nav-link" href="">Welcome ' . $_SESSION['username'] . '</a></li>';
                     echo '<li class="nav-item"><a class="nav-link" href="logout.php">Log Out</a></li>';
                 } else {
-                    echo '<li class="nav-item"><a class="nav-link" href="../pages/login.html">Sign In</a></li>';        
+                    echo '<li class="nav-item"><a class="nav-link" href="../pages/login.html">Sign In</a></li>';
                 }
                 ?>
             </ul>
@@ -97,9 +123,9 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="side-bar ml-5 mt-5 col-md-3">
                     <h3>Book Categories</h3><hr>
                     <div class="card border-0">
-                        <button onclick="load_books(0)" class="btn btn-outline-secondary category-filter-link active" autofocus="autofocus" data-category="All" id="categoryAll">All Books</button>
+                        <button onclick="logCategoryView(0, 'All')" class="btn btn-outline-secondary category-filter-link active" autofocus="autofocus" data-category="All" id="categoryAll">All Books</button>
                         <?php foreach ($categories as $category): ?>
-                            <button onclick="load_books(<?php echo $category['id']; ?>)" class="btn mt-1 btn-outline-secondary category-filter-link" data-category="<?php echo htmlspecialchars($category['name']); ?>" id="category<?php echo $category['id']; ?>">
+                            <button onclick="logCategoryView(<?php echo $category['id']; ?>, '<?php echo htmlspecialchars($category['name']); ?>')" class="btn mt-1 btn-outline-secondary category-filter-link" data-category="<?php echo htmlspecialchars($category['name']); ?>" id="category<?php echo $category['id']; ?>">
                                 <?php echo htmlspecialchars($category['name']); ?>
                             </button>
                         <?php endforeach; ?>
@@ -109,6 +135,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="main-content ml-5 mt-5 col-md-8">
                     <div class="card card-content">
                         <div class="d-flex justify-content-between mt-3">
+                            
                             <!-- Add Book Modal -->
                             <button type="button" class="btn btn-secondary ml-3" data-toggle="modal" data-target="#addBookModal">&#10010; Add Book </button>
                             

@@ -1,0 +1,86 @@
+03/12/24 04:39:34	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	24	пользователь	Logged out
+03/12/24 04:39:56	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:40:08	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged out
+03/12/24 04:40:09	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	[-]	[-]	Log fault
+03/12/24 04:40:15	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged in
+03/12/24 04:40:15	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:41:33	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:41:33	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 2
+03/12/24 04:41:34	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 3
+03/12/24 04:41:35	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 4
+03/12/24 04:41:36	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:41:51	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged out
+03/12/24 04:42:18	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged in
+03/12/24 04:42:18	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:42:35	/book/server/add_book.php		[-]	[-]	Added a new book
+03/12/24 04:42:36	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:42:38	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 3
+03/12/24 04:42:40	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 0
+03/12/24 04:42:40	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:42:41	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 2
+03/12/24 04:42:41	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 3
+03/12/24 04:42:41	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 4
+03/12/24 04:42:42	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 8
+03/12/24 04:42:43	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:48:58	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:48:58	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 0
+03/12/24 04:48:59	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:49:40	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 3
+03/12/24 04:54:12	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:54:22	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:54:23	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:54:24	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 2
+03/12/24 04:55:44	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:55:46	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:55:46	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 3
+03/12/24 04:55:55	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:55:56	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:56:19	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:56:20	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:56:21	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:56:21	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:56:22	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:56:28	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:58:52	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:58:54	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:59:22	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:59:28	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 04:59:29	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 1
+03/12/24 04:59:29	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 2
+03/12/24 04:59:30	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Viewed category ID: 4
+03/12/24 05:25:11	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 05:37:39	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged out
+03/12/24 05:37:57	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	[-]	[-]	Log fault
+03/12/24 05:38:38	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	[-]	[-]	Log fault
+03/12/24 05:38:57	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	[-]	[-]	Log fault
+03/12/24 05:50:03	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged in
+03/12/24 11:23:56	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged out
+03/12/24 11:24:10	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	23	пользователь	Logged in
+03/12/24 11:24:10	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	23	пользователь	View page: books.php
+03/12/24 11:24:16	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	23	пользователь	Viewed category ID: 1
+03/12/24 11:24:17	/book/server/log_view.php	t2lh9mtbkrb8aldm968kbpcgtk	23	пользователь	Viewed category ID: 3
+03/12/24 11:24:58	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	23	пользователь	Logged out
+03/12/24 11:25:01	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged in
+03/12/24 11:35:41	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged out
+03/12/24 11:35:45	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged in
+03/12/24 11:35:45	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 11:36:16	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged out
+03/12/24 11:36:33	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	27	пользователь	View page: books.php
+03/12/24 11:36:37	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	27	пользователь	Logged out
+03/12/24 11:38:23	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged in
+03/12/24 11:43:39	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged out
+03/12/24 11:43:46	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	27	пользователь	Logged in
+03/12/24 11:43:46	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	27	пользователь	View page: books.php
+03/12/24 11:43:49	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	27	пользователь	Logged out
+03/12/24 11:43:56	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged in
+03/12/24 11:46:18	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged out
+03/12/24 11:46:22	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	27	пользователь	Logged in
+03/12/24 11:46:22	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	27	пользователь	View page: books.php
+03/12/24 11:46:25	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	27	пользователь	Logged out
+03/12/24 11:46:32	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged in
+03/12/24 11:48:25	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged out
+03/12/24 11:48:34	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged in
+03/12/24 11:48:34	/book/server/books.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	View page: books.php
+03/12/24 11:48:36	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	25	пользователь	Logged out
+03/12/24 11:48:41	/book/server/login.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged in
+03/12/24 11:52:31	/book/server/logout.php	t2lh9mtbkrb8aldm968kbpcgtk	26	администратор	Logged out

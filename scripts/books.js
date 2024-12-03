@@ -8,6 +8,11 @@ function load_books(category_id) {
     });
 }
 
+function logCategoryView(categoryId) {
+    $.post('../server/log_view.php', { action: 'View category', category_id: categoryId });
+}
+
+
 function view_details(id) {
     $("#viewBookDetailsModal").modal("show");
 

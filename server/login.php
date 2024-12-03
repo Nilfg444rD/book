@@ -1,10 +1,11 @@
 <?php
 session_start();
 include('../database/conn.php');
+include 'log_functions.php'; // Подключаем файл с функцией логирования
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
-    $password = hash("sha256", $_POST['pass']);
+    $password = md5($_POST['pass']); // Используем md5 для хэширования
 
     // Выполняем запрос для проверки пользователя и его роли
     $sql = "SELECT id, role, username FROM user WHERE email = :email AND password = :password";
@@ -15,21 +16,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->rowCount() == 1) {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
-        
+
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['role'] = $user['role'];
         $_SESSION['username'] = $user['username'];
 
-        // Проверяем роль пользователя и перенаправляем в зависимости от неё
+        // Логируем успешный вход
+        write_logs("Logged in");
+
+        // Перенаправляем пользователя в зависимости от его роли
         if ($user['role'] === 'администратор') {
-            header("Location: ../server/admin.php"); // Перенаправляем на admin.php для администраторов
+            header("Location: ../server/admin.php");
         } elseif ($user['role'] === 'менеджер') {
-            header("Location: ../server/manager_books.php"); // Перенаправляем на manager_books.php для менеджеров
+            header("Location: ../server/manager_books.php");
         } else {
-            header("Location: ../server/books.php"); // Перенаправляем на books.php для обычных пользователей
+            header("Location: ../server/books.php");
         }
         exit();
     } else {
+        // Логируем неудачную попытку входа
+        write_logs("Log fault");
         echo "Неверные учетные данные!";
     }
 }
+?>

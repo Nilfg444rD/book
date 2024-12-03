@@ -18,20 +18,18 @@ if ($result) {
     // Сохраняем данные в сессии
     $_SESSION["username"] = $username;
 
-    // Хешируем пароль
-    $hashedPassword = hash("sha256", $pass);
+    // Хэшируем пароль перед сохранением
+    $hashedPassword = md5($pass); // Используем md5 для хэширования
 
     // Подготовка запроса для добавления нового пользователя с ролью "пользователь" по умолчанию
     $stmt = $conn->prepare("
-        INSERT INTO user (id, username, email, password, role)
-        VALUES (NULL, :username, :email, :hashedPassword, :role)
+    INSERT INTO user (id, username, email, password, role)
+    VALUES (NULL, :username, :email, :hashedPassword, :role)
     ");
-    $stmt->bindParam(':email', $email);
     $stmt->bindParam(':username', $username);
-    $stmt->bindParam(':hashedPassword', $hashedPassword);
-
-    // Устанавливаем роль "пользователь" по умолчанию
-    $role = 'пользователь';
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':hashedPassword', $hashedPassword); // Привязываем хэшированный пароль
+    $role = 'пользователь'; // Устанавливаем роль по умолчанию
     $stmt->bindParam(':role', $role);
 
     $stmt->execute();

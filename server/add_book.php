@@ -10,6 +10,10 @@ $bookAuthor = $_POST['book_author'];
 $bookAbstract = $_POST['book_abstract'];
 $bookTimeAdded = date("Y-m-d H:i:s");
 
+include 'log_functions.php';
+write_logs("Added a new book");
+
+
 
 // Make sure to use $_FILES['book_image']['name'] for the file name
 $bookImageName = $_FILES['book_image']['name'];
